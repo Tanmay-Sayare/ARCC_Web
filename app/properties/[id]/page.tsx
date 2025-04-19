@@ -10,13 +10,7 @@ import { Bath, Bed, ChevronLeft, Home, Mail, MapPin, MoveHorizontal, Phone } fro
 import PropertyImageGallery from "@/components/property-image-gallery"
 import SimilarProperties from "@/components/similar-properties"
 
-interface PropertyPageProps {
-  params: {
-    id: string
-  }
-}
-
-export default function PropertyPage({ params }: PropertyPageProps) {
+export default function Page({ params }: { params: { id: string } }) {
   const property = allProperties.find((p) => p.id === params.id)
 
   if (!property) {
@@ -25,7 +19,7 @@ export default function PropertyPage({ params }: PropertyPageProps) {
 
   return (
     <div className="flex flex-col">
-      <div className="container px-4 py-8 md:px-6">
+      <div className="container px-4 py-8 md:px-6">    
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 mb-6 text-sm">
           <Link href="/" className="text-muted-foreground hover:text-foreground">
@@ -58,11 +52,7 @@ export default function PropertyPage({ params }: PropertyPageProps) {
               <span>{property.location}</span>
             </div>
           </div>
-          <div className="  />
-              <span>{property.location}</span>
-            </div>
-          </div>
-          <div className=\"text-right">
+          <div className="text-right">
             <p className="text-3xl font-bold">₹{property.price.toLocaleString()}</p>
             <p className="text-muted-foreground text-sm">
               {property.type === "For Rent" || property.type === "For Lease" ? "per month" : ""}
