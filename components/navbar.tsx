@@ -1,20 +1,26 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
 import { ThemeToggle } from "@/components/theme-toggle"
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -24,7 +30,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image src="/images/logo.png" alt="ARCC Logo" width={120} height={50} className="h-10 w-auto" priority />
@@ -49,34 +55,35 @@ export default function Navbar() {
           <ThemeToggle />
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Navigation */}
         <div className="flex md:hidden items-center gap-4">
           <ThemeToggle />
-          <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Toggle menu">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] pr-0">
+              <nav className="flex flex-col gap-4 mt-6">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={`text-lg font-medium p-2 rounded-md transition-colors hover:bg-accent ${
+                      pathname === link.href ? "text-primary bg-accent/50" : "text-muted-foreground"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 z-50 bg-background border-t border-border/40 p-4">
-          <nav className="flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={`text-lg font-medium p-2 rounded-md transition-colors hover:bg-accent ${
-                  pathname === link.href ? "text-primary bg-accent/50" : "text-muted-foreground"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      )}
     </header>
   )
 }
