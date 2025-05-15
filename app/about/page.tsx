@@ -19,7 +19,7 @@ export default function AboutPage() {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-6">
             About Amarsingh Realty and Consulting Company
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg font-bold max-w-3xl mx-auto">
             A premier real estate and land holding company based in East Nagpur.
           </p>
         </div>

@@ -13,7 +13,7 @@ export default function ContactPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=600&width=1920"
+            src="/images/image 123.jpeg"
             alt="Contact Us"
             fill
             className="object-cover brightness-50"
@@ -21,7 +21,7 @@ export default function ContactPage() {
         </div>
         <div className="container relative z-10 px-4 md:px-6 text-center">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tighter mb-6">Contact Us</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg font-bold max-w-3xl mx-auto">
             Get in touch with our team of real estate experts to discuss your needs and find the perfect property.
           </p>
         </div>
