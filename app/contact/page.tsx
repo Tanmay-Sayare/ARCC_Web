@@ -141,13 +141,15 @@ export default function ContactPage() {
           </div>
 
           <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-            <Image
-              src="/placeholder.svg?height=600&width=1200&text=Map"
-              alt="Office Location Map"
-              width={1200}
-              height={600}
-              className="w-full h-full object-cover"
-            />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1860.5319928277067!2d79.11843007599551!3d21.149843980531806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0c9968c4ba7%3A0x4f4b21ffaee51d38!2sAmarsingh%20Complex%2C%20Lakadganj%2C%20Nagpur%2C%20Maharashtra%20440008!5e0!3m2!1sen!2sin!4v1709754586014!5m2!1sen!2sin&markers=color:red%7Clabel:ARCC%7C21.149843980531806,79.11843007599551"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>

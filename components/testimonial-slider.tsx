@@ -9,25 +9,22 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 const testimonials = [
   {
     id: 1,
-    name: "Rahul Sharma",
+    name: "Tanmay Sayare",
     position: "First-time Homebuyer",
-    image: "/placeholder.svg?height=100&width=100",
     quote:
       "ARCC made my first home buying experience incredibly smooth. Their team guided me through every step of the process and helped me find the perfect property within my budget.",
   },
   {
     id: 2,
-    name: "Priya Patel",
+    name: "Priya Rai",
     position: "Property Investor",
-    image: "/placeholder.svg?height=100&width=100",
     quote:
       "I've worked with several real estate consultants, but ARCC stands out for their professionalism and market knowledge. They helped me build a profitable real estate portfolio in Nagpur.",
   },
   {
     id: 3,
-    name: "Vikram Mehta",
+    name: "Om Khopde",
     position: "Business Owner",
-    image: "/placeholder.svg?height=100&width=100",
     quote:
       "Finding the right commercial space for my business was crucial. ARCC understood my requirements perfectly and found us an ideal location that has significantly contributed to our growth.",
   },
@@ -61,12 +58,6 @@ export default function TestimonialSlider() {
             <p className="text-lg sm:text-xl mb-8 italic">"{testimonials[current].quote}"</p>
             <div className="flex items-center gap-4">
               <div className="relative h-12 w-12 rounded-full overflow-hidden">
-                <Image
-                  src={testimonials[current].image || "/placeholder.svg"}
-                  alt={testimonials[current].name}
-                  fill
-                  className="object-cover"
-                />
               </div>
               <div>
                 <h4 className="font-semibold">{testimonials[current].name}</h4>

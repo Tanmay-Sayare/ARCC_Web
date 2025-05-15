@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/image 1234.jpeg')" }}>
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="container relative z-10 px-4 md:px-6">
           <div className="max-w-2xl backdrop-blur-lg bg-white/10 p-8 rounded-lg border border-white/10 shadow-lg">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 text-white">
@@ -55,7 +55,7 @@ export default function HomePage() {
               </Button>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=800&width=600" alt="ARCC Office" fill className="object-cover" />
+              <Image src="/images/house 12345.jpg" alt="ARCC Office" fill className="object-cover" />
             </div>
           </div>
         </div>

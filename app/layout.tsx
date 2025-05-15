@@ -10,8 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Amarsingh Realty and Consulting Company",
-  description: "Premier real estate services in Nagpur",
-    generator: 'v0.dev'
+  description: "Premier real estate services in Nagpur"
 }
 
 export default function RootLayout({

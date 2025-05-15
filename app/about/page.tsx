@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=600&width=1920"
+            src="/images/image 123.jpeg"
             alt="About ARCC"
             fill
             className="object-cover brightness-50"
@@ -62,7 +62,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=800&width=600" alt="ARCC Office" fill className="object-cover" />
+              <Image src="/images/house 12345.jpg" alt="ARCC Office" fill className="object-cover" />
             </div>
           </div>
         </div>

@@ -181,42 +181,7 @@ export default function Page({ params }: { params: { id: string } }) {
             </Tabs>
           </div>
           
-          <div className="lg:col-span-1">
-            <Card>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="relative h-16 w-16 rounded-full overflow-hidden">
-                    <Image
-                      src="/placeholder.svg?height=64&width=64&text=Agent"
-                      alt={property.agent.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">{property.agent.name}</h3>
-                    <p className="text-sm text-muted-foreground">Property Agent</p>
-                  </div>
-                </div>
-                
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <span>{property.agent.phone}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mail className="h-5 w-5 text-primary" />
-                    <span>{property.agent.email}</span>
-                  </div>
-                </div>
-                
-                <div className="space-y-3">
-                  <Button className="w-full">Contact Agent</Button>
-                  <Button variant="outline" className="w-full">Schedule Viewing</Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          
         </div>
         
         {/* Similar Properties */}

@@ -12,10 +12,10 @@ export const featuredProperties = [
     size: 3500,
     featured: true,
     images: [
-      "/placeholder.svg?height=400&width=600&text=Luxury Villa",
-      "/placeholder.svg?height=400&width=600&text=Living Room",
-      "/placeholder.svg?height=400&width=600&text=Kitchen",
-      "/placeholder.svg?height=400&width=600&text=Master Bedroom",
+      "/images/1.jpeg",
+      "/images/2.jpeg",
+      "/images/3.jpeg",
+      "/images/4.jpeg"
     ],
     amenities: [
       "Swimming Pool",
@@ -27,11 +27,6 @@ export const featuredProperties = [
       "Parking",
       "Gym",
     ],
-    agent: {
-      name: "Rahul Sharma",
-      phone: "+91 98765 43210",
-      email: "rahul@arccnagpur.com",
-    },
     fullDescription: `
       This magnificent villa in Civil Lines offers the perfect blend of luxury and comfort. The property features 4 spacious bedrooms, each with an attached bathroom, a large living room, a dining area, and a modern kitchen.
       
@@ -55,10 +50,10 @@ export const featuredProperties = [
     size: 2000,
     featured: true,
     images: [
-      "/placeholder.svg?height=400&width=600&text=Commercial Space",
-      "/placeholder.svg?height=400&width=600&text=Interior",
-      "/placeholder.svg?height=400&width=600&text=Reception",
-      "/placeholder.svg?height=400&width=600&text=Conference Room",
+      "/images/2.jpeg",
+      "/images/3.jpeg",
+      "/images/4.jpeg",
+      "/images/1.jpeg"
     ],
     amenities: [
       "24/7 Access",
@@ -70,11 +65,6 @@ export const featuredProperties = [
       "Cafeteria",
       "High-Speed Internet",
     ],
-    agent: {
-      name: "Priya Patel",
-      phone: "+91 98765 43211",
-      email: "priya@arccnagpur.com",
-    },
     fullDescription: `
       This premium commercial space in Dharampeth is perfect for businesses looking for a prime location with high visibility and footfall. The property offers 2,000 sq.ft of flexible space that can be customized to suit various business needs, whether you're looking to set up an office, a retail store, or a restaurant.
       
@@ -98,10 +88,10 @@ export const featuredProperties = [
     size: 1800,
     featured: true,
     images: [
-      "/placeholder.svg?height=400&width=600&text=3BHK Apartment",
-      "/placeholder.svg?height=400&width=600&text=Living Room",
-      "/placeholder.svg?height=400&width=600&text=Kitchen",
-      "/placeholder.svg?height=400&width=600&text=Master Bedroom",
+      "/images/3.jpeg",
+      "/images/4.jpeg",
+      "/images/1.jpeg",
+      "/images/2.jpeg"
     ],
     amenities: [
       "Club House",
@@ -113,11 +103,6 @@ export const featuredProperties = [
       "Parking",
       "Elevator",
     ],
-    agent: {
-      name: "Vikram Mehta",
-      phone: "+91 98765 43212",
-      email: "vikram@arccnagpur.com",
-    },
     fullDescription: `
       This elegant 3BHK apartment in Ramdaspeth offers modern living in one of Nagpur's most prestigious localities. The apartment features 3 spacious bedrooms with attached bathrooms, a large living and dining area, a modern kitchen, and a balcony with a beautiful view.
       
@@ -141,10 +126,10 @@ export const featuredProperties = [
     size: 5000,
     featured: false,
     images: [
-      "/placeholder.svg?height=400&width=600&text=Residential Plot",
-      "/placeholder.svg?height=400&width=600&text=Area View",
-      "/placeholder.svg?height=400&width=600&text=Road Access",
-      "/placeholder.svg?height=400&width=600&text=Nearby Amenities",
+      "/images/4.jpeg",
+      "/images/1.jpeg",
+      "/images/2.jpeg",
+      "/images/3.jpeg"
     ],
     amenities: [
       "Clear Title",
@@ -154,11 +139,6 @@ export const featuredProperties = [
       "Electricity Connection Available",
       "Near Schools and Hospitals",
     ],
-    agent: {
-      name: "Rahul Sharma",
-      phone: "+91 98765 43210",
-      email: "rahul@arccnagpur.com",
-    },
     fullDescription: `
       This prime residential plot in Manish Nagar offers an excellent opportunity for those looking to build their dream home or for investment purposes. The plot measures 5,000 sq.ft and is located in a rapidly developing area with excellent future appreciation potential.
       
@@ -181,10 +161,10 @@ export const featuredProperties = [
     size: 1200,
     featured: false,
     images: [
-      "/placeholder.svg?height=400&width=600&text=Office Space",
-      "/placeholder.svg?height=400&width=600&text=Reception",
-      "/placeholder.svg?height=400&width=600&text=Work Area",
-      "/placeholder.svg?height=400&width=600&text=Conference Room",
+      "/images/4.jpeg",
+      "/images/3.jpeg",
+      "/images/2.jpeg",
+      "/images/1.jpeg"
     ],
     amenities: [
       "24/7 Access",
@@ -196,11 +176,6 @@ export const featuredProperties = [
       "High-Speed Internet",
       "Cafeteria Nearby",
     ],
-    agent: {
-      name: "Priya Patel",
-      phone: "+91 98765 43211",
-      email: "priya@arccnagpur.com",
-    },
     fullDescription: `
       This ready-to-move office space in Sadar is perfect for businesses looking for a central location with excellent connectivity. The office measures 1,200 sq.ft and is located in a modern commercial complex with all essential amenities.
       
@@ -223,10 +198,10 @@ export const featuredProperties = [
     size: 1100,
     featured: false,
     images: [
-      "/placeholder.svg?height=400&width=600&text=2BHK Flat",
-      "/placeholder.svg?height=400&width=600&text=Living Room",
-      "/placeholder.svg?height=400&width=600&text=Kitchen",
-      "/placeholder.svg?height=400&width=600&text=Bedroom",
+      "/images/2.jpeg",
+      "/images/1.jpeg",
+      "/images/4.jpeg",
+      "/images/3.jpeg"
     ],
     amenities: [
       "Society Garden",
@@ -238,11 +213,6 @@ export const featuredProperties = [
       "Water Supply",
       "Near Schools and Markets",
     ],
-    agent: {
-      name: "Vikram Mehta",
-      phone: "+91 98765 43212",
-      email: "vikram@arccnagpur.com",
-    },
     fullDescription: `
       This cozy 2BHK flat in Pratap Nagar offers comfortable living in a family-friendly society. The flat features 2 spacious bedrooms with attached bathrooms, a living and dining area, a kitchen, and a balcony.
       
