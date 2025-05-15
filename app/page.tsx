@@ -10,20 +10,14 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Luxury Real Estate"
-            fill
-            className="object-cover brightness-50"
-            priority
-          />
-        </div>
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/image 1234.jpeg')" }}>
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">Simple Made Perfect</h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <div className="max-w-2xl backdrop-blur-lg bg-white/10 p-8 rounded-lg border border-white/10 shadow-lg">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 text-white">
+              Simple Made Perfect
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 mb-8">
               At ARCC, we believe in turning your real estate dreams into reality. With a legacy of excellence in the
               real estate market, we offer a wide range of services designed to meet your unique needs.
             </p>
